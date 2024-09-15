@@ -44,7 +44,7 @@ function App() {
   
   const renderProduse = Produse.map(entity =>(
     <div key={entity.id} className="flex items-center gap-2 text-slate-500" >
-      <img src={entity.photo} width="50" height="50"/>
+      <img src={entity.photo}/>
       <span>{entity.name}</span>
       <span>{entity.price}</span>
     </div>

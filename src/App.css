@@ -7,14 +7,14 @@
 
 .card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto adjusts based on screen size */
+  grid-template-columns: repeat(200px, 1fr); /* Auto adjusts based on screen size */
   gap: 20px; /* Space between the cards */
   padding: 20px; /* Padding around the grid */
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
+  display: grid;
+  grid-template-columns: repeat(200px, 1fr);
   align-items: center; /* Center align the image and text */
   text-align: center;
   border: 1px solid #110b0b; /* Border around each product card */
