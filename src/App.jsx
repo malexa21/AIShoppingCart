@@ -43,9 +43,9 @@ const Produse = [
 function App() {
   
   const renderProduse = Produse.map(entity =>(
-    <div key={entity.id} className="flex items-center gap-2 text-slate-500 hover:text-black " >
-      <span>{entity.name}</span>
+    <div key={entity.id} className="flex items-center gap-2 text-slate-500" >
       <img src={entity.photo} width="50" height="50"/>
+      <span>{entity.name}</span>
       <span>{entity.price}</span>
     </div>
   ))
@@ -53,8 +53,8 @@ function App() {
   return (
     <>
       <div>
-        <h1>AI Shop</h1>
-        <div>
+        <h1 className="absolute top-0 left-0 text-left m-2">AI Shop</h1>
+        <div className='card'>
           {renderProduse}
         </div>
       </div>

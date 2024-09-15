@@ -2,41 +2,33 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  text-align: left;
 }
 
 .card {
-  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto adjusts based on screen size */
+  gap: 20px; /* Space between the cards */
+  padding: 20px; /* Padding around the grid */
 }
 
-.read-the-docs {
-  color: #e4dada;
+.product-card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align the image and text */
+  text-align: center;
+  border: 1px solid #110b0b; /* Border around each product card */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
+
+.product-card img {
+  margin-bottom: 10px; /* Adds space below the image */
+}
+
+.product-card span {
+  font-size: 1rem;
+  color: #333;
+}
+
