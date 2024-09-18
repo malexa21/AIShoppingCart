@@ -40,13 +40,20 @@ const Produse = [
   },
 ];
 
+const AddToCartHandler = (id) => {
+  
+}
+
 function App() {
   
   const renderProduse = Produse.map(entity =>(
-    <div key={entity.id} className="flex items-center gap-2 text-slate-500" >
-      <img src={entity.photo}/>
-      <span>{entity.name}</span>
-      <span>{entity.price}</span>
+    <div key={entity.id} className='card-list' >
+      <div className='product-card details'>
+      <img className='product-card img' src={entity.photo} width={200} height={200}/>
+        <span >{entity.name}</span>
+        <span>{entity.price}</span>
+        <button></button>
+      </div>
     </div>
   ))
 
@@ -54,7 +61,7 @@ function App() {
     <>
       <div>
         <h1 className="absolute top-0 left-0 text-left m-2">AI Shop</h1>
-        <div className='card'>
+        <div className='product-card'>
           {renderProduse}
         </div>
       </div>
